@@ -22,14 +22,14 @@ public class BarcodeScannerPackage implements ReactPackage {
         return Collections.emptyList();
     }
 
-    @Override
+    // @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
             barcodeScannerManager
         );
     }
 
-    @Override
+    // @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
             new BarcodeScannerModule(reactContext, barcodeScannerManager)
